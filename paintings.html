@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Paintings gallery - oil paintings and mixed media works">
+  <title>paintings — artist name</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <a href="index.html">artist name</a>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav-menu">
+        <a href="paintings.html" class="active">paintings</a>
+        <a href="drawings.html">drawings</a>
+        <a href="about.html">about</a>
+        <a href="contact.html">contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="gallery-header">
+        <h1>paintings</h1>
+      </div>
+
+      <div class="gallery-grid">
+        <!-- Artwork 1 -->
+        <div class="gallery-item" data-src="images/paintings/painting-01.jpg" data-title="untitled I" data-details="oil on canvas, 72&quot; x 80&quot;, 2024">
+          <img src="images/paintings/painting-01.jpg" alt="untitled I - oil on canvas">
+          <div class="gallery-item-info">
+            <p class="gallery-item-title">untitled I</p>
+            <p class="gallery-item-details">oil on canvas, 72" x 80", 2024</p>
+          </div>
+        </div>
+
+        <!-- Artwork 2 -->
+        <div class="gallery-item" data-src="images/paintings/painting-02.jpg" data-title="untitled II" data-details="oil on canvas, 60&quot; x 48&quot;, 2024">
+          <img src="images/paintings/painting-02.jpg" alt="untitled II - oil on canvas">
+          <div class="gallery-item-info">
+            <p class="gallery-item-title">untitled II</p>
+            <p class="gallery-item-details">oil on canvas, 60" x 48", 2024</p>
+          </div>
+        </div>
+
+        <!-- Artwork 3 -->
+        <div class="gallery-item" data-src="images/paintings/painting-03.jpg" data-title="untitled III" data-details="oil on canvas, 48&quot; x 36&quot;, 2023">
+          <img src="images/paintings/painting-03.jpg" alt="untitled III - oil on canvas">
+          <div class="gallery-item-info">
+            <p class="gallery-item-title">untitled III</p>
+            <p class="gallery-item-details">oil on canvas, 48" x 36", 2023</p>
+          </div>
+        </div>
+
+        <!-- Artwork 4 -->
+        <div class="gallery-item" data-src="images/paintings/painting-04.jpg" data-title="untitled IV" data-details="oil on canvas, 72&quot; x 60&quot;, 2023">
+          <img src="images/paintings/painting-04.jpg" alt="untitled IV - oil on canvas">
+          <div class="gallery-item-info">
+            <p class="gallery-item-title">untitled IV</p>
+            <p class="gallery-item-details">oil on canvas, 72" x 60", 2023</p>
+          </div>
+        </div>
+
+        <!-- Artwork 5 -->
+        <div class="gallery-item" data-src="images/paintings/painting-05.jpg" data-title="untitled V" data-details="mixed media on canvas, 36&quot; x 36&quot;, 2022">
+          <img src="images/paintings/painting-05.jpg" alt="untitled V - mixed media on canvas">
+          <div class="gallery-item-info">
+            <p class="gallery-item-title">untitled V</p>
+            <p class="gallery-item-details">mixed media on canvas, 36" x 36", 2022</p>
+          </div>
+        </div>
+
+        <!-- Artwork 6 -->
+        <div class="gallery-item" data-src="images/paintings/painting-06.jpg" data-title="untitled VI" data-details="oil on canvas, 48&quot; x 48&quot;, 2022">
+          <img src="images/paintings/painting-06.jpg" alt="untitled VI - oil on canvas">
+          <div class="gallery-item-info">
+            <p class="gallery-item-title">untitled VI</p>
+            <p class="gallery-item-details">oil on canvas, 48" x 48", 2022</p>
+          </div>
+        </div>
+
+        <!--
+          TO ADD MORE ARTWORK:
+          Copy the gallery-item div below and update:
+          - data-src: path to your image
+          - data-title: artwork title
+          - data-details: medium, dimensions, year
+          - img src and alt attributes
+          - gallery-item-title and gallery-item-details text
+        -->
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Lightbox for viewing full-size images -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" aria-label="Close">&times;</button>
+    <div class="lightbox-content">
+      <img src="" alt="" id="lightbox-img">
+      <div class="lightbox-info">
+        <p class="gallery-item-title" id="lightbox-title"></p>
+        <p class="gallery-item-details" id="lightbox-details"></p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2026 Artist Name. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

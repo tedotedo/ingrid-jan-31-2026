@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Drawings gallery - charcoal, graphite, and ink works on paper">
+  <title>drawings — artist name</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <a href="index.html">artist name</a>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav-menu">
+        <a href="paintings.html">paintings</a>
+        <a href="drawings.html" class="active">drawings</a>
+        <a href="about.html">about</a>
+        <a href="contact.html">contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="gallery-header">
+        <h1>drawings</h1>
+      </div>
+
+      <div class="gallery-grid">
+        <!-- Drawing 1 -->
+        <div class="gallery-item" data-src="images/drawings/drawing-01.jpg" data-title="formation" data-details="charcoal on paper, 22&quot; x 30&quot;, 2024">
+          <img src="images/drawings/drawing-01.jpg" alt="formation - charcoal on paper">
+          <div class="gallery-item-info">
+            <p class="gallery-item-title">formation</p>
+            <p class="gallery-item-details">charcoal on paper, 22" x 30", 2024</p>
+          </div>
+        </div>
+
+        <!-- Drawing 2 -->
+        <div class="gallery-item" data-src="images/drawings/drawing-02.jpg" data-title="evening" data-details="charcoal on paper, 23&quot; x 25&quot;, 2024">
+          <img src="images/drawings/drawing-02.jpg" alt="evening - charcoal on paper">
+          <div class="gallery-item-info">
+            <p class="gallery-item-title">evening</p>
+            <p class="gallery-item-details">charcoal on paper, 23" x 25", 2024</p>
+          </div>
+        </div>
+
+        <!-- Drawing 3 -->
+        <div class="gallery-item" data-src="images/drawings/drawing-03.jpg" data-title="study I" data-details="graphite on paper, 18&quot; x 24&quot;, 2023">
+          <img src="images/drawings/drawing-03.jpg" alt="study I - graphite on paper">
+          <div class="gallery-item-info">
+            <p class="gallery-item-title">study I</p>
+            <p class="gallery-item-details">graphite on paper, 18" x 24", 2023</p>
+          </div>
+        </div>
+
+        <!-- Drawing 4 -->
+        <div class="gallery-item" data-src="images/drawings/drawing-04.jpg" data-title="study II" data-details="graphite on paper, 18&quot; x 24&quot;, 2023">
+          <img src="images/drawings/drawing-04.jpg" alt="study II - graphite on paper">
+          <div class="gallery-item-info">
+            <p class="gallery-item-title">study II</p>
+            <p class="gallery-item-details">graphite on paper, 18" x 24", 2023</p>
+          </div>
+        </div>
+
+        <!-- Drawing 5 -->
+        <div class="gallery-item" data-src="images/drawings/drawing-05.jpg" data-title="passage" data-details="ink on paper, 14&quot; x 20&quot;, 2022">
+          <img src="images/drawings/drawing-05.jpg" alt="passage - ink on paper">
+          <div class="gallery-item-info">
+            <p class="gallery-item-title">passage</p>
+            <p class="gallery-item-details">ink on paper, 14" x 20", 2022</p>
+          </div>
+        </div>
+
+        <!-- Drawing 6 -->
+        <div class="gallery-item" data-src="images/drawings/drawing-06.jpg" data-title="untitled" data-details="charcoal on paper, 30&quot; x 22&quot;, 2022">
+          <img src="images/drawings/drawing-06.jpg" alt="untitled - charcoal on paper">
+          <div class="gallery-item-info">
+            <p class="gallery-item-title">untitled</p>
+            <p class="gallery-item-details">charcoal on paper, 30" x 22", 2022</p>
+          </div>
+        </div>
+
+        <!--
+          TO ADD MORE ARTWORK:
+          Copy the gallery-item div below and update:
+          - data-src: path to your image
+          - data-title: artwork title
+          - data-details: medium, dimensions, year
+          - img src and alt attributes
+          - gallery-item-title and gallery-item-details text
+        -->
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Lightbox for viewing full-size images -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" aria-label="Close">&times;</button>
+    <div class="lightbox-content">
+      <img src="" alt="" id="lightbox-img">
+      <div class="lightbox-info">
+        <p class="gallery-item-title" id="lightbox-title"></p>
+        <p class="gallery-item-details" id="lightbox-details"></p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2026 Artist Name. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
