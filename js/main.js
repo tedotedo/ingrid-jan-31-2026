@@ -18,11 +18,14 @@ document.addEventListener('DOMContentLoaded', function() {
 function initMobileNav() {
   const navToggle = document.querySelector('.nav-toggle');
   const navMenu = document.querySelector('.nav-menu');
+  const body = document.body;
 
   if (navToggle && navMenu) {
-    navToggle.addEventListener('click', function() {
-      navMenu.classList.toggle('active');
+    navToggle.addEventListener('click', function(e) {
+      e.stopPropagation();
+      const isOpen = navMenu.classList.toggle('active');
       navToggle.classList.toggle('active');
+      body.classList.toggle('menu-open', isOpen);
     });
 
     // Close menu when clicking a link
@@ -31,14 +34,16 @@ function initMobileNav() {
       link.addEventListener('click', function() {
         navMenu.classList.remove('active');
         navToggle.classList.remove('active');
+        body.classList.remove('menu-open');
       });
     });
 
-    // Close menu when clicking outside
-    document.addEventListener('click', function(event) {
-      if (!navToggle.contains(event.target) && !navMenu.contains(event.target)) {
+    // Close on Escape key
+    document.addEventListener('keydown', function(event) {
+      if (event.key === 'Escape' && navMenu.classList.contains('active')) {
         navMenu.classList.remove('active');
         navToggle.classList.remove('active');
+        body.classList.remove('menu-open');
       }
     });
   }
