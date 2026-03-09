@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rugs gallery - handmade rugs and textile works">
+  <title>rugs — ingrid aszkenasy</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <a href="index.html">ingrid aszkenasy</a>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav-menu">
+        <a href="paintings.html">paintings</a>
+        <a href="drawings.html">drawings</a>
+        <a href="rugs.html" class="active">rugs</a>
+        <a href="about.html">about</a>
+        <a href="contact.html">contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="gallery-header">
+        <h1>rugs</h1>
+      </div>
+
+      <div class="gallery-grid">
+        <!-- Rug 1 -->
+        <div class="gallery-item" data-src="images/rugs/WhatsApp Image 2026-03-08 at 18.10.02 (2).jpeg" data-title="untitled I" data-details="handwoven textile">
+          <img src="images/rugs/WhatsApp Image 2026-03-08 at 18.10.02 (2).jpeg" alt="untitled I - handwoven textile">
+          <div class="gallery-item-info">
+            <p class="gallery-item-title">untitled I</p>
+            <p class="gallery-item-details">handwoven textile</p>
+          </div>
+        </div>
+
+        <!-- Rug 2 -->
+        <div class="gallery-item" data-src="images/rugs/WhatsApp Image 2026-03-08 at 18.10.02 (3).jpeg" data-title="untitled II" data-details="handwoven textile">
+          <img src="images/rugs/WhatsApp Image 2026-03-08 at 18.10.02 (3).jpeg" alt="untitled II - handwoven textile">
+          <div class="gallery-item-info">
+            <p class="gallery-item-title">untitled II</p>
+            <p class="gallery-item-details">handwoven textile</p>
+          </div>
+        </div>
+
+        <!-- Rug 3 -->
+        <div class="gallery-item" data-src="images/rugs/WhatsApp Image 2026-03-08 at 18.10.02 (4).jpeg" data-title="untitled III" data-details="handwoven textile">
+          <img src="images/rugs/WhatsApp Image 2026-03-08 at 18.10.02 (4).jpeg" alt="untitled III - handwoven textile">
+          <div class="gallery-item-info">
+            <p class="gallery-item-title">untitled III</p>
+            <p class="gallery-item-details">handwoven textile</p>
+          </div>
+        </div>
+
+        <!-- Rug 4 -->
+        <div class="gallery-item" data-src="images/rugs/WhatsApp Image 2026-03-08 at 18.10.03 (1).jpeg" data-title="untitled IV" data-details="handwoven textile">
+          <img src="images/rugs/WhatsApp Image 2026-03-08 at 18.10.03 (1).jpeg" alt="untitled IV - handwoven textile">
+          <div class="gallery-item-info">
+            <p class="gallery-item-title">untitled IV</p>
+            <p class="gallery-item-details">handwoven textile</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Lightbox for viewing full-size images -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" aria-label="Close">&times;</button>
+    <div class="lightbox-content">
+      <img src="" alt="" id="lightbox-img">
+      <div class="lightbox-info">
+        <p class="gallery-item-title" id="lightbox-title"></p>
+        <p class="gallery-item-details" id="lightbox-details"></p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2026 Ingrid Aszkenasy. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
