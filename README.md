@@ -9,6 +9,7 @@ A clean, minimal portfolio website for showcasing artwork. Inspired by professio
 ├── index.html          # Home page
 ├── paintings.html      # Paintings gallery
 ├── drawings.html       # Drawings gallery
+├── rugs.html           # Rugs gallery (bilingual EN/FR description)
 ├── about.html          # About/CV page
 ├── contact.html        # Contact information
 ├── css/
@@ -16,8 +17,9 @@ A clean, minimal portfolio website for showcasing artwork. Inspired by professio
 ├── js/
 │   └── main.js         # Navigation & lightbox
 └── images/
-    ├── paintings/      # Your painting images
-    └── drawings/       # Your drawing images
+    ├── paintings/      # Painting images
+    ├── drawings/       # Drawing images
+    └── rugs/           # Rug images
 ```
 
 ## Quick Start - Customizing for Your Use
@@ -55,6 +57,8 @@ In `paintings.html` and `drawings.html`, update each gallery item:
 ```
 
 To add more artwork, copy a gallery-item div and update the values.
+
+**Rugs page:** The rugs gallery uses a shared page-level description (bilingual English/French) instead of individual item titles. Each rug item only has a `data-details` attribute — no `data-title`. The description includes material (100% handspun wool) and approximate dimensions in inches (EN) and centimetres (FR).
 
 ### 4. Update About Page
 
