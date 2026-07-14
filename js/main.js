@@ -69,10 +69,12 @@ function initLightbox() {
       const imgSrc = item.getAttribute('data-src');
       const title = item.getAttribute('data-title');
       const details = item.getAttribute('data-details');
+      const thumbnail = item.querySelector('img');
+      const altText = thumbnail ? thumbnail.alt : '';
 
       if (imgSrc) {
         lightboxImg.src = imgSrc;
-        lightboxImg.alt = title || '';
+        lightboxImg.alt = title || altText;
         lightboxTitle.textContent = title || '';
         lightboxDetails.textContent = details || '';
         lightbox.classList.add('active');
